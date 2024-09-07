@@ -72,3 +72,21 @@ function count_zero(binaryString){
 const result3 = count_zero('110000100010');
 
 console.log(result3);
+
+// task-5 start here;
+// Write a function called odd_even() which takes an integer
+//  value and tells whether this value is even or odd. If even return Even. If odd return Odd
+
+function even_odd(integer){
+    let value = '';
+    if(integer % 2 === 1){
+       value = `this is odd number ${integer}`;
+    }
+    else{
+        value = `this is even number ${integer}`
+    }
+    return value;
+}
+
+const result4 = even_odd(34);
+console.log(result4);
