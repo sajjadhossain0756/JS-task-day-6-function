@@ -36,7 +36,7 @@ console.log(oddOrEven2);
 // Write a function called make_avg() which will take an array of integers and the size of 
 // that array and return the average of those values.
 
-function averageNumber(array,size){
+function make_avg(array,size){
     
      let sum = 0;
      for(let i = 0; i < size; i++){  
@@ -51,5 +51,24 @@ function averageNumber(array,size){
 const array1 = [20, 30, 40, 10, 25, 55];
 let size = array1.length;
 
-const result2 = averageNumber(array1,size);
+const result2 = make_avg(array1,size);
 console.log(`average number is ${result2}`);
+
+// task-4 start here
+// Write a function called count_zero() which will take a binary string (Binary string 
+// is a string which is consist of only 0 and 1) as parameter and count how many 0’s are there in that string.
+
+function count_zero(binaryString){
+    let count = 0;
+    for(let i = 0; i < binaryString.length; i++){
+        
+        if(binaryString[i] === '0'){
+           count++
+        }   
+    }
+    return count;
+}
+
+const result3 = count_zero('110000100010');
+
+console.log(result3);
