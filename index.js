@@ -31,3 +31,25 @@ const oddOrEven = multiplyNumber2(9);
 const oddOrEven2 = multiplyNumber2(20);
 console.log(oddOrEven);
 console.log(oddOrEven2);
+
+// task-3 start here;
+// Write a function called make_avg() which will take an array of integers and the size of 
+// that array and return the average of those values.
+
+function averageNumber(array,size){
+    
+     let sum = 0;
+     for(let i = 0; i < size; i++){  
+
+        sum += array[i];   
+     }
+     const average = sum / size;
+     return average;
+     
+}
+
+const array1 = [20, 30, 40, 10, 25, 55];
+let size = array1.length;
+
+const result2 = averageNumber(array1,size);
+console.log(`average number is ${result2}`);
